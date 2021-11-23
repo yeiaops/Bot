@@ -1,2 +1,2 @@
-# mbot
+# Discord bot
 discord.py BOT
