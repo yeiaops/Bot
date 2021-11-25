@@ -10,10 +10,10 @@ async def on_ready():
     print("Discord BOT NAME:" + client.user.name)
     print("Discord BOT ID:" + str(client.user.id))
     print("Login Time:"+str(datetime.datetime.today()))
-    print("Discord.py Version:" + str(discord.__version__))
+    print("Discord.py Version:" + str(nextcord.__version__))
     s = len(client.guilds)
     print('------')
-    await client.change_presence(status=discord.Status.online, activity=discord.Game("Active on {} servers".format(s)))
+    await client.change_presence(status=nextcord.Status.online, activity=discord.Game("Active on {} servers".format(s)))
 
 
 
