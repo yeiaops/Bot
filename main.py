@@ -27,5 +27,8 @@ async def on_message(message):
     
     if msg == "!Hello":
         await message.channel.send("Hello World")
+    
+    if msg == "!Credit":
+        await message.channel.send("make a Minemagazine")
       
 client.run("Your Token")
