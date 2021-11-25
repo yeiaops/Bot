@@ -13,7 +13,7 @@ async def on_ready():
     print("Discord.py Version:" + str(nextcord.__version__))
     s = len(client.guilds)
     print('------')
-    await client.change_presence(status=nextcord.Status.online, activity=discord.Game("Active on {} servers".format(s)))
+    await client.change_presence(status=nextcord.Status.online, activity=nextcord.Game("Active on {} servers".format(s)))
 
 
 
