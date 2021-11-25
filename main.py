@@ -15,8 +15,6 @@ async def on_ready():
     print('------')
     await client.change_presence(status=nextcord.Status.online, activity=nextcord.Game("Active on {} servers".format(s)))
 
-
-
 @client.event
 async def on_message(message):
     if message.author.bot:
@@ -26,5 +24,8 @@ async def on_message(message):
     
     if msg == "!ping":
         await message.channel.send("pong")
+    
+    if msg == "!Hello":
+        await message.channel.send("Hello World")
       
 client.run("Your Token")
