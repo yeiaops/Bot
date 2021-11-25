@@ -1,7 +1,7 @@
-import discord
+import nextcord
 import datetime
 
-client = discord.Client()
+client = nextcord.Client()
 
 @client.event
 async def on_ready():
@@ -18,7 +18,6 @@ async def on_ready():
 
 
 @client.event
-
 async def on_message(message):
     if message.author.bot:
         return None
